@@ -60,12 +60,37 @@ const GridTitle = styled.h1`
 
 const SachaContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   grid-gap: 1rem;
+  margin-bottom: 10px;
 `;
 
-const Card = styled.img``;
+const Card = styled.div`
+  width:300px;
+  height:300px;
+  background-image: url("./${(props) => props.background}");
+  background-size:contain;
+  background-repeat:no-repeat;
+`;
+const SachaCard = styled(Card)`
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+`;
+
+const SachaLink = styled.a`
+  background-color: ${(props) => (props.isDetail ? "#11428c" : "#18ADB1")};
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  margin-left: 10px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+`;
 
 export default function Home() {
   return (
@@ -91,15 +116,43 @@ export default function Home() {
       <CardContainer>
         <GridTitle>단기 핵심과정</GridTitle>
         <DangiContainer>
-          <Card src="dangi_c.jpg" alt="dangi_c" />
-          <Card src="dangi_java.jpg" alt="dangi_java" />
-          <Card src="dangi_jdbc.jpg" alt="dangi_jdbc" />
-          <Card src="dangi_data.jpg" alt="dangi_data" />
+          <Card background="dangi_c.jpg" alt="dangi_c" />
+          <Card background="dangi_java.jpg" alt="dangi_java" />
+          <Card background="dangi_jdbc.jpg" alt="dangi_jdbc" />
+          <Card background="dangi_data.jpg" alt="dangi_data" />
         </DangiContainer>
         <GridTitle>4차산업 선도인력 양성</GridTitle>
         <SachaContainer>
-          <Card src="aws_sacha.jpg" alt="sacha_cloud" />
-          <Card src="cloud_bigdata_sacha.jpg" alt="sacha_aws" />
+          <SachaCard
+            className="sacha"
+            background="aws_sacha.jpg"
+            alt="sacha_cloud"
+          >
+            <SachaLink
+              isDetail
+              href="https://www.hrd.go.kr/hrdp/co/pcobo/PCOBO0100P.do?tracseId=AIG20200000268656&tracseTme=1&crseTracseSe=C0061&trainstCstmrId=500020028183#undefined"
+            >
+              상세보기
+            </SachaLink>
+            <SachaLink href="https://forms.gle/6uJbhDGPU7gi2Y386">
+              지원하기
+            </SachaLink>
+          </SachaCard>
+          <SachaCard
+            className="sacha"
+            background="cloud_bigdata_sacha.jpg"
+            alt="sacha_aws"
+          >
+            <SachaLink
+              isDetail
+              href="https://www.hrd.go.kr/hrdp/co/pcobo/PCOBO0100P.do?tracseId=AIG20200000268658&tracseTme=1&crseTracseSe=C0061&trainstCstmrId=500020028183#undefined"
+            >
+              상세보기
+            </SachaLink>
+            <SachaLink href="https://forms.gle/yDqrCBKKnnAnGE8r8">
+              지원하기
+            </SachaLink>
+          </SachaCard>
         </SachaContainer>
       </CardContainer>
     </Container>
