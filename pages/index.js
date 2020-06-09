@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import Head from "next/head";
+import Popup from "../components/Popup";
+import { useState, useCallback } from "react";
 const Container = styled.div``;
 
 const HeaderWarningMessage = styled.div`
@@ -40,7 +42,7 @@ const HeaderWarningMessage = styled.div`
 `;
 
 const CardContainer = styled.div`
-  width: 70%;
+  width: 55%;
   margin: auto;
 `;
 
@@ -68,9 +70,9 @@ const SachaContainer = styled.div`
 
 const Card = styled.div`
   width:300px;
-  height:300px;
+  height:350px;
   background-image: url("./${(props) => props.background}");
-  background-size:contain;
+  background-size:auto;
   background-repeat:no-repeat;
 `;
 const SachaCard = styled(Card)`
@@ -93,11 +95,21 @@ const SachaLink = styled.a`
 `;
 
 export default function Home() {
+  const [popupOpen, setPopupOpen] = useState(false);
+  const togglePopup = useCallback(() => {
+    setPopupOpen(!popupOpen);
+  }, [popupOpen]);
   return (
     <Container>
+      {popupOpen && <Popup togglePopup={togglePopup} />}
       <Head>
         <title>비트교육센터에 오신 것을 환영합니다.</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="비트교육센터 비트캠프 비트캠퍼스" />
+        <meta
+          name="keywords"
+          content="프로그래밍 교육 비트교육센터 비트캠프 비트캠퍼스 자바 C C++ 국비지원 4차산업 AWS 빅데이터 클라우드 머신러닝 딥러닝"
+        />
       </Head>
       <HeaderWarningMessage>
         <div className="wrapper">
@@ -118,8 +130,13 @@ export default function Home() {
         <DangiContainer>
           <Card background="dangi_c.jpg" alt="dangi_c" />
           <Card background="dangi_java.jpg" alt="dangi_java" />
-          <Card background="dangi_jdbc.jpg" alt="dangi_jdbc" />
-          <Card background="dangi_data.jpg" alt="dangi_data" />
+          <Card background="dangi_python.jpg" alt="dangi_data" />
+          <Card
+            background="dangi_jdbc.jpg"
+            alt="dangi_jdbc"
+            style={{ cursor: "pointer" }}
+            onClick={togglePopup}
+          />
         </DangiContainer>
         <GridTitle>4차산업 선도인력 양성</GridTitle>
         <SachaContainer>
@@ -155,6 +172,18 @@ export default function Home() {
           </SachaCard>
         </SachaContainer>
       </CardContainer>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginBottom: "1rem",
+        }}
+      >
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_50XGeRBdsoEqzL63YcK63RQVVcxNpryiGRcXJ5gE0OC2jA/viewform?usp=sf_link">
+          <img src="./banner1.jpg" style={{ minWidth: "50vw" }} />
+        </a>
+      </div>
     </Container>
   );
 }
