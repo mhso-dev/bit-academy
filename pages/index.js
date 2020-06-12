@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import Head from "next/head";
-import Popup from "../components/Popup";
+import Popup2 from "../components/Popup2";
 import { useState, useCallback } from "react";
+import Course_C_gen from "../utils/data-generator/short-term-course/Course_C_gen";
+import Course_Java_gen from "../utils/data-generator/short-term-course/Course_Java_gen";
+import Course_Python_gen from "../utils/data-generator/short-term-course/Course_Python_gen";
+import Course_Jdbc_gen from "../utils/data-generator/short-term-course/Course_Jdbc_gen";
 const Container = styled.div``;
 
 const HeaderWarningMessage = styled.div`
@@ -74,7 +78,9 @@ const Card = styled.div`
   background-image: url("./${(props) => props.background}");
   background-size:auto;
   background-repeat:no-repeat;
+  cursor:pointer;
 `;
+
 const SachaCard = styled(Card)`
   width: 600px;
   height: 400px;
@@ -96,12 +102,31 @@ const SachaLink = styled.a`
 
 export default function Home() {
   const [popupOpen, setPopupOpen] = useState(false);
-  const togglePopup = useCallback(() => {
-    setPopupOpen(!popupOpen);
-  }, [popupOpen]);
+  const [popupContents, setPopupContents] = useState(null);
+  const [imagePopup, setImagePopup] = useState({});
+
+  const togglePopup = useCallback(
+    (data, imagePopupData = null) => {
+      setPopupOpen(!popupOpen);
+      if (imagePopupData) {
+        setImagePopup(true);
+        setPopupContents(imagePopupData);
+      } else {
+        setImagePopup(false);
+        setPopupContents(data);
+      }
+    },
+    [popupOpen, popupContents]
+  );
   return (
     <Container>
-      {popupOpen && <Popup togglePopup={togglePopup} />}
+      {popupOpen && (
+        <Popup2
+          togglePopup={togglePopup}
+          popupContents={popupContents}
+          imagePopup={imagePopup}
+        />
+      )}
       <Head>
         <title>비트교육센터에 오신 것을 환영합니다.</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -128,14 +153,26 @@ export default function Home() {
       <CardContainer>
         <GridTitle>단기 핵심과정</GridTitle>
         <DangiContainer>
-          <Card background="dangi_c.jpg" alt="dangi_c" />
-          <Card background="dangi_java.jpg" alt="dangi_java" />
-          <Card background="dangi_python.jpg" alt="dangi_data" />
+          <Card
+            background="dangi_c.jpg"
+            alt="dangi_c"
+            onClick={() => togglePopup(Course_C_gen, null)}
+          />
+          <Card
+            background="dangi_java.jpg"
+            alt="dangi_java"
+            onClick={() => togglePopup(Course_Java_gen, null)}
+          />
+          <Card
+            background="dangi_python.jpg"
+            alt="dangi_data"
+            onClick={() => togglePopup(Course_Python_gen, null)}
+          />
           <Card
             background="dangi_jdbc.jpg"
             alt="dangi_jdbc"
             style={{ cursor: "pointer" }}
-            onClick={togglePopup}
+            onClick={() => togglePopup(Course_Jdbc_gen, null)}
           />
         </DangiContainer>
         <GridTitle>4차산업 선도인력 양성</GridTitle>
@@ -180,9 +217,17 @@ export default function Home() {
           marginBottom: "1rem",
         }}
       >
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_50XGeRBdsoEqzL63YcK63RQVVcxNpryiGRcXJ5gE0OC2jA/viewform?usp=sf_link">
-          <img src="./banner1.jpg" style={{ minWidth: "50vw" }} />
-        </a>
+        <img
+          src="./banner1.jpg"
+          style={{ minWidth: "50vw", cursor: "pointer" }}
+          onClick={() =>
+            togglePopup(null, {
+              imageUrl: "/chungnyun_academy_2020.jpg",
+              imageFormUrl:
+                "https://docs.google.com/forms/d/e/1FAIpQLSd_50XGeRBdsoEqzL63YcK63RQVVcxNpryiGRcXJ5gE0OC2jA/viewform?usp=sf_link",
+            })
+          }
+        />
       </div>
     </Container>
   );
