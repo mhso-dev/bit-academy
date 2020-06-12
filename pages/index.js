@@ -87,6 +87,7 @@ const SachaCard = styled(Card)`
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  padding: 1rem;
 `;
 
 const SachaLink = styled.a`
@@ -192,11 +193,7 @@ export default function Home() {
               지원하기
             </SachaLink>
           </SachaCard>
-          <SachaCard
-            className="sacha"
-            background="cloud_bigdata_sacha.jpg"
-            alt="sacha_aws"
-          >
+          <SachaCard className="sacha" background="cloud_bigdata_sacha.jpg">
             <SachaLink
               isDetail
               href="https://www.hrd.go.kr/hrdp/co/pcobo/PCOBO0100P.do?tracseId=AIG20200000268658&tracseTme=1&crseTracseSe=C0061&trainstCstmrId=500020028183#undefined"
