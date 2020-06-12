@@ -88,6 +88,7 @@ const SachaCard = styled(Card)`
   justify-content: flex-start;
   align-items: flex-end;
   padding: 1rem;
+  cursor: default;
 `;
 
 const SachaLink = styled.a`
@@ -178,6 +179,22 @@ export default function Home() {
         </DangiContainer>
         <GridTitle>4차산업 선도인력 양성</GridTitle>
         <SachaContainer>
+          <SachaCard className="sacha" background="cloud_bigdata_sacha.jpg">
+            <SachaLink
+              isDetail
+              onClick={() =>
+                togglePopup(null, {
+                  imageUrl: "/cloud_poster.png",
+                  imageFormUrl: "https://forms.gle/yDqrCBKKnnAnGE8r8",
+                })
+              }
+            >
+              상세보기
+            </SachaLink>
+            <SachaLink href="https://forms.gle/yDqrCBKKnnAnGE8r8">
+              지원하기
+            </SachaLink>
+          </SachaCard>
           <SachaCard
             className="sacha"
             background="aws_sacha.jpg"
@@ -190,17 +207,6 @@ export default function Home() {
               상세보기
             </SachaLink>
             <SachaLink href="https://forms.gle/6uJbhDGPU7gi2Y386">
-              지원하기
-            </SachaLink>
-          </SachaCard>
-          <SachaCard className="sacha" background="cloud_bigdata_sacha.jpg">
-            <SachaLink
-              isDetail
-              href="https://www.hrd.go.kr/hrdp/co/pcobo/PCOBO0100P.do?tracseId=AIG20200000268658&tracseTme=1&crseTracseSe=C0061&trainstCstmrId=500020028183#undefined"
-            >
-              상세보기
-            </SachaLink>
-            <SachaLink href="https://forms.gle/yDqrCBKKnnAnGE8r8">
               지원하기
             </SachaLink>
           </SachaCard>
