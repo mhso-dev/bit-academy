@@ -108,6 +108,8 @@ export default ({ togglePopup, popupContents, imagePopup }) => {
     doc_download,
     imageUrl,
     imageFormUrl,
+    courseFeatures,
+    coursePrivilege,
   } = popupContents;
 
   const handleUserKeyPress = useCallback((event) => {
@@ -165,6 +167,12 @@ export default ({ togglePopup, popupContents, imagePopup }) => {
                   descList={courseIntroduction}
                 />
               )}
+              {coursePrivilege && (
+                <CourseDescription
+                  descTitle={`교육과정\n특장점`}
+                  descList={coursePrivilege}
+                />
+              )}
               {courseGoal && (
                 <CourseDescription descTitle="교육목표" descList={courseGoal} />
               )}
@@ -172,6 +180,12 @@ export default ({ togglePopup, popupContents, imagePopup }) => {
                 <CourseDescription
                   descTitle="교육대상"
                   courseTarget={courseTarget}
+                />
+              )}
+              {courseFeatures && (
+                <CourseDescription
+                  descTitle="교육특전"
+                  descList={courseFeatures}
                 />
               )}
 

@@ -6,6 +6,7 @@ import Course_C_gen from "../utils/data-generator/short-term-course/Course_C_gen
 import Course_Java_gen from "../utils/data-generator/short-term-course/Course_Java_gen";
 import Course_Python_gen from "../utils/data-generator/short-term-course/Course_Python_gen";
 import Course_Jdbc_gen from "../utils/data-generator/short-term-course/Course_Jdbc_gen";
+import Cloud_Bigdata_gen from "../utils/data-generator/short-term-course/Cloud_Bigdata_gen";
 const Container = styled.div``;
 
 const HeaderWarningMessage = styled.div`
@@ -173,7 +174,6 @@ export default function Home() {
           <Card
             background="dangi_jdbc.jpg"
             alt="dangi_jdbc"
-            style={{ cursor: "pointer" }}
             onClick={() => togglePopup(Course_Jdbc_gen, null)}
           />
         </DangiContainer>
@@ -182,12 +182,13 @@ export default function Home() {
           <SachaCard className="sacha" background="cloud_bigdata_sacha.jpg">
             <SachaLink
               isDetail
-              onClick={() =>
-                togglePopup(null, {
-                  imageUrl: "/cloud_poster.png",
-                  imageFormUrl: "https://forms.gle/yDqrCBKKnnAnGE8r8",
-                })
-              }
+              // onClick={() =>
+              //   togglePopup(null, {
+              //     imageUrl: "/cloud_poster.png",
+              //     imageFormUrl: "https://forms.gle/yDqrCBKKnnAnGE8r8",
+              //   })
+              // }
+              onClick={() => togglePopup(Cloud_Bigdata_gen, null)}
             >
               상세보기
             </SachaLink>
