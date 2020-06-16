@@ -18,8 +18,8 @@ export default {
   ],
   courseTarget: [
     {
-      targetTitle: null,
-      targetDescription: ["만34세이하 청년구직자(비전공자 지원가능)"],
+      descriptionTitle: null,
+      descriptionContents: ["만34세이하 청년구직자(비전공자 지원가능)"],
     },
   ],
   courseSchedules: {
