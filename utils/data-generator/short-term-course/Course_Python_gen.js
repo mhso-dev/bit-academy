@@ -9,8 +9,8 @@ export default {
   ],
   courseTarget: [
     {
-      targetTitle: "프로그래밍이 낯선 당신! Python부터!",
-      targetDescription: [
+      descriptionTitle: "프로그래밍이 낯선 당신! Python부터!",
+      descriptionContents: [
         `
         프로그래밍 언어를 공부하는 이들의 첫 번째 고민은 “어떤 프로그래밍 언어를 가장 먼저 공부할까? 입니다. 이
 물음에 대해서 여러 가지 접근 방식이 존재할 수 있지만 1차적으로 생각할 수 있는 방식은 ”가장 인기 있는 프
@@ -24,8 +24,8 @@ TIOBE Index에서 꾸준히 그 순위가 높아지고 있는 추세이며, 구�
       ],
     },
     {
-      targetTitle: "파이썬을 공부하면...",
-      targetDescription: [
+      descriptionTitle: "파이썬을 공부하면...",
+      descriptionContents: [
         "객체지향 프로그래밍의 원리를 이해하고 이에 따라 소프트웨어를 구현할 수 있습니다.",
         "개인 블로그, 회사 홈페이지, 웹 애플리케이션 등 다양한 웹서비스를 직접 개발할 수 있습니다.",
         "현업의 데이터 사이언티스트들이 활용하는 다양한 라이브러리를 활용해 나만의 데이터",

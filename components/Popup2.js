@@ -110,6 +110,7 @@ export default ({ togglePopup, popupContents, imagePopup }) => {
     imageFormUrl,
     courseFeatures,
     coursePrivilege,
+    cardInfomation,
   } = popupContents;
 
   const handleUserKeyPress = useCallback((event) => {
@@ -179,7 +180,7 @@ export default ({ togglePopup, popupContents, imagePopup }) => {
               {courseTarget && (
                 <CourseDescription
                   descTitle="교육대상"
-                  courseTarget={courseTarget}
+                  descWithTitles={courseTarget}
                 />
               )}
               {courseFeatures && (
@@ -220,10 +221,17 @@ export default ({ togglePopup, popupContents, imagePopup }) => {
                   }
                 />
               )}
+
               {courseLisence && (
                 <CourseDescription
-                  courseLisence={courseLisence}
+                  descWithTitles={courseLisence}
                   descTitle={`자격증\n안내`}
+                />
+              )}
+              {cardInfomation && (
+                <CourseDescription
+                  descWithTitles={cardInfomation}
+                  descTitle={`국민내일\n배움카드\n안내`}
                 />
               )}
               {courseGuide && (

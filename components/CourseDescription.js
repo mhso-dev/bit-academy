@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
-const Title = styled.div`
+const Title = styled.span`
   display: flex;
   background-color: #5da9dd;
   padding: 5px;
@@ -16,9 +16,9 @@ const Title = styled.div`
   border-radius: 3px;
   text-align: center;
   min-width: 3rem;
-  height: 0.7rem;
+  max-height: 2rem;
+  min-height: 1rem;
   margin-right: 1rem;
-  height: 1.3rem;
   justify-content: center;
   align-items: center;
 `;
@@ -43,54 +43,35 @@ const CourseTitle = styled.div`
   color: black;
 `;
 
-export default ({
-  descTitle,
-  descList,
-  courseTarget,
-  courseLisence,
-  table,
-}) => {
+export default ({ descTitle, descList, descWithTitles, table }) => {
   return (
     <Wrapper>
       <Title>
-        {descTitle.split("\n")[0]}
-        <br />
-        {descTitle.split("\n")[1]}
+        {descTitle.split("\n").map((text, index) =>
+          index === descTitle.split("\n").length - 1 ? (
+            <>{text}</>
+          ) : (
+            <>
+              {text}
+              <br />
+            </>
+          )
+        )}
       </Title>
       <DescWrapper>
-        {courseLisence ? (
-          <Desc>
-            <CourseTitle>{courseLisence.lisenceTitle}</CourseTitle>
-            <span
-              style={{
-                color: "#5da9dd",
-                fontWeight: "600",
-              }}
-            >
-              ·
-            </span>{" "}
-            {courseLisence.lisenceDescription}
-          </Desc>
-        ) : courseTarget ? (
-          courseTarget.map((courseInfo, index) => (
-            <Desc key={index}>
-              {courseInfo.targetTitle && (
-                <CourseTitle>{courseInfo.targetTitle}</CourseTitle>
-              )}
-
-              {courseInfo.targetDescription.map((targetDesc, index) => (
-                <div key={index}>
-                  <span
-                    style={{
-                      color: "#5da9dd",
-                      fontWeight: "600",
-                    }}
-                  >
-                    ·
-                  </span>{" "}
-                  {targetDesc}
-                </div>
-              ))}
+        {descWithTitles ? (
+          descWithTitles.map((descWithTitle) => (
+            <Desc>
+              <CourseTitle>{descWithTitle.descriptionTitle}</CourseTitle>
+              <span
+                style={{
+                  color: "#5da9dd",
+                  fontWeight: "600",
+                }}
+              >
+                ·
+              </span>{" "}
+              {descWithTitle.descriptionContents}
             </Desc>
           ))
         ) : table ? (

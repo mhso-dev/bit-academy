@@ -6,7 +6,7 @@ export default {
   ],
   courseTarget: [
     {
-      targetDescription: [
+      descriptionContents: [
         "데이터베이스 관련 직무 재직자, SQL 학습이 필요한 재직자",
         "튜닝에 필수인 인덱스와 조인을 심도 있게 학습을 하려는 재직자",
       ],

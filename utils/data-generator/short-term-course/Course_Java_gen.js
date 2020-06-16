@@ -10,14 +10,14 @@ export default {
   ],
   courseTarget: [
     {
-      targetTitle: "전 세계에서 가장 많은 사용자를 보유한 언어, JAVA",
-      targetDescription: [
+      descriptionTitle: "전 세계에서 가장 많은 사용자를 보유한 언어, JAVA",
+      descriptionContents: [
         "자바 언어는 프로그래밍 언어 중 세계 1위를 기록하고 있는 객체지향 언어이며, 우리나라 웹 개발들이 채택하고 있는 주용 언어 중 하나이며, 모바일 OS 점유율 1위를 기록하고 있는 안드로이드 OS의 공식 개발 언어입니다.",
       ],
     },
     {
-      targetTitle: "자바를 공부하면...",
-      targetDescription: [
+      descriptionTitle: "자바를 공부하면...",
+      descriptionContents: [
         "객체지향 프로그래밍의 원리를 이해하고 이에 따라 소프트웨어를 구현할 수 있습니다.",
         "안드로이드 OS에서 동작하는 모바일 애플리케이션을 개발할 수 있습니다.",
         "자바 언어를 기반으로 동작하는 인터넷, 네트워크의 동작 원리를 이해하고 기초를 튼튼히 할 수 있습니다.",

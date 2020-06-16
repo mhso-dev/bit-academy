@@ -17,8 +17,8 @@ export default {
   ],
   courseTarget: [
     {
-      targetTitle: null,
-      targetDescription: [
+      descriptionTitle: null,
+      descriptionContents: [
         "C++ 프로그래밍의 선수 지식을 얻고자 하는 분",
         "윈도우 닷넷 개발자가 되고자 하는 분",
         "임베디드 시스템 개발자가 되고자 하는 분",
@@ -174,11 +174,34 @@ export default {
       contents: ["트리의 실습구조/확장 형태의 이해"],
     },
   ],
-  courseLisence: {
-    lisenceTitle: "C 프로그래밍 마스터 자격증 시험",
-    lisenceDescription:
-      "2016년부터 비트교육센터가 시행하고 있는 C 프로그래밍 자격증으로 자격기본법 제 17조 제2항에 따라 주무부처인 과기정통부에 등록하고, 한국직업능력개발원에 등록된 민간자격증입니다. 본 자격증을 취득한자는 비트교육센터가 인정하는 프로그래밍 실력을 갖추었고, 응용프로그램을 개발 할 수 있음을 객관적으로 증명할수 있으며, 비트교육센터가 협약을 맺고 있는 기업에 지원할 경우 가산점을 받을 수 있습니다.",
-  },
+  // 국민내일 배움카드 안내
+  cardInfomation: [
+    {
+      descriptionContents: [
+        "기존 구직자 또는 재직자로 운영되던 내일배움카드를 국민내일배움카드로 통합 ('20,1,1)",
+        "실업 재직, 자영업자 여부 관계없이 신청 가능",
+      ],
+    },
+    {
+      descriptionTitle: "지원금액",
+      descriptionContents: ["1인당 300~500만원까지 훈련비의 45~85% 지원"],
+    },
+    {
+      descriptionTitle: "문의처",
+      descriptionContents: [
+        "고용노동부 고객상담센터 (Tel. 국번없이 1350)",
+        "HRD-NET 홈페이지 (www.hrd.go.kr)",
+      ],
+    },
+  ],
+  courseLisence: [
+    {
+      descriptionTitle: "C 프로그래밍 마스터 자격증 시험",
+      descriptionContents: [
+        "2016년부터 비트교육센터가 시행하고 있는 C 프로그래밍 자격증으로 자격기본법 제 17조 제2항에 따라 주무부처인 과기정통부에 등록하고, 한국직업능력개발원에 등록된 민간자격증입니다. 본 자격증을 취득한자는 비트교육센터가 인정하는 프로그래밍 실력을 갖추었고, 응용프로그램을 개발 할 수 있음을 객관적으로 증명할수 있으며, 비트교육센터가 협약을 맺고 있는 기업에 지원할 경우 가산점을 받을 수 있습니다.",
+      ],
+    },
+  ],
   courseGuide: ["문의 : 비트교육센터 Tel. 02-3486-1780"],
   formUrl:
     "https://docs.google.com/forms/d/1HLO7Z-H5w7AXiTnVS56U-Ffj55XBuo4_v_zWp4eRXzk/edit",
