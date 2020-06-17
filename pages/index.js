@@ -150,6 +150,9 @@ export default function Home() {
             <p className="tel">
               문의사항은 02)3486-3456 또는 카카오톡 '비트교육센터'검색
             </p>
+            <p className="message" style={{ marginTop: "1rem" }}>
+              * 홈페이지는 Chrome 브라우저에 최적화 되어있습니다. *
+            </p>
           </div>
         </div>
       </HeaderWarningMessage>
@@ -182,12 +185,6 @@ export default function Home() {
           <SachaCard className="sacha" background="cloud_bigdata_sacha.jpg">
             <SachaLink
               isDetail
-              // onClick={() =>
-              //   togglePopup(null, {
-              //     imageUrl: "/cloud_poster.png",
-              //     imageFormUrl: "https://forms.gle/yDqrCBKKnnAnGE8r8",
-              //   })
-              // }
               onClick={() => togglePopup(Cloud_Bigdata_gen, null)}
             >
               상세보기
@@ -212,27 +209,59 @@ export default function Home() {
             </SachaLink>
           </SachaCard>
         </SachaContainer>
+        <SachaContainer>
+          <div>
+            <GridTitle>청년취업아카데미</GridTitle>
+            <SachaCard
+              className="sacha"
+              background="chung_nyun_main.jpg"
+              alt="sacha_cloud"
+            >
+              <SachaLink
+                isDetail
+                onClick={() =>
+                  togglePopup(null, {
+                    imageUrl: "/chungnyun_detail.jpg",
+                    imageFormUrl:
+                      "https://docs.google.com/forms/d/e/1FAIpQLSd_50XGeRBdsoEqzL63YcK63RQVVcxNpryiGRcXJ5gE0OC2jA/viewform",
+                    doc_download: "/청년취업아카데미 지원서 양식.doc",
+                  })
+                }
+              >
+                상세보기
+              </SachaLink>
+              <SachaLink href="https://docs.google.com/forms/d/e/1FAIpQLSd_50XGeRBdsoEqzL63YcK63RQVVcxNpryiGRcXJ5gE0OC2jA/viewform">
+                지원하기
+              </SachaLink>
+            </SachaCard>
+          </div>
+          <div>
+            <GridTitle>신입사원채용교육</GridTitle>
+            <SachaCard
+              className="sacha"
+              background="sinip_main.jpg"
+              alt="sacha_cloud"
+            >
+              <SachaLink
+                isDetail
+                onClick={() =>
+                  togglePopup(null, {
+                    imageUrl: "/sinip_detail.jpg",
+                    imageFormUrl:
+                      "https://docs.google.com/forms/d/1KtIGD0qmiFblQszd-U_05D7JMr-TykcADBckP9PCtZs/edit",
+                    doc_download: "/신입사원채용교육 지원서.doc",
+                  })
+                }
+              >
+                상세보기
+              </SachaLink>
+              <SachaLink href="https://docs.google.com/forms/d/1KtIGD0qmiFblQszd-U_05D7JMr-TykcADBckP9PCtZs/edit">
+                지원하기
+              </SachaLink>
+            </SachaCard>
+          </div>
+        </SachaContainer>
       </CardContainer>
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          marginBottom: "1rem",
-        }}
-      >
-        <img
-          src="./banner1.jpg"
-          style={{ minWidth: "50vw", cursor: "pointer" }}
-          onClick={() =>
-            togglePopup(null, {
-              imageUrl: "/chungnyun_academy_2020.jpg",
-              imageFormUrl:
-                "https://docs.google.com/forms/d/e/1FAIpQLSd_50XGeRBdsoEqzL63YcK63RQVVcxNpryiGRcXJ5gE0OC2jA/viewform?usp=sf_link",
-            })
-          }
-        />
-      </div>
     </Container>
   );
 }

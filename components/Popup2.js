@@ -141,6 +141,11 @@ export default ({ togglePopup, popupContents, imagePopup }) => {
               />
             </a>
             <EnrolmentWrapper>
+              {doc_download && (
+                <Button bgcolor={"#105981"} href={doc_download}>
+                  제출서류 다운로드
+                </Button>
+              )}
               <Button bgcolor={"#5da9dd"} href={imageFormUrl}>
                 수강신청
               </Button>
