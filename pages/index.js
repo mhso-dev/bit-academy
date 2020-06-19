@@ -249,7 +249,7 @@ export default function Home() {
                     imageUrl: "/sinip_detail.jpg",
                     imageFormUrl:
                       "https://docs.google.com/forms/d/1KtIGD0qmiFblQszd-U_05D7JMr-TykcADBckP9PCtZs/edit",
-                    doc_download: "/신입사원채용교육 지원서.doc",
+                    doc_download: "/신입사원채용교육 지원서(양식).xls",
                   })
                 }
               >
