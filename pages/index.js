@@ -138,7 +138,7 @@ export default function Home() {
       <HeaderWarningMessage>
         <div className="wrapper">
           <div className="textWrapper">
-            <h1>[ 비트교육센터 홈페이지 시스템 점검중 ]</h1>
+            <h1>[ 비트교육센터 임시 페이지 운영중 ]</h1>
             <p className="message">
               비트교육센터 홈페이지 이용에 불편을 드려서 대단히 죄송합니다.
               점검이 진행되는 동안 임시페이지를 운영 중이오니 양해 부탁드립니다.
