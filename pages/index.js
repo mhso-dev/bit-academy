@@ -47,13 +47,13 @@ const HeaderWarningMessage = styled.div`
 `;
 
 const CardContainer = styled.div`
-  width: 55%;
+  width: 70%;
   margin: auto;
 `;
 
-const DangiContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+const SmallCardContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
   justify-items: center;
 `;
 
@@ -65,34 +65,30 @@ const GridTitle = styled.h1`
   margin-bottom: 1rem;
 `;
 
-const SachaContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  grid-gap: 1rem;
+const BigCardContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
   margin-bottom: 10px;
 `;
 
-const Card = styled.div`
-  width:300px;
-  height:350px;
-  background-image: url("./${(props) => props.background}");
-  background-size:auto;
-  background-repeat:no-repeat;
-  cursor:pointer;
+const Card = styled.img`
+  cursor: pointer;
 `;
 
-const SachaCard = styled(Card)`
-  width: 600px;
-  height: 400px;
+const BigCardWrapper = styled.div`
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding: 1rem;
+  flex-direction: column;
+  .button__wrapper {
+    margin-top: 10px;
+    display: flex;
+  }
+`;
+
+const BigCard = styled(Card)`
   cursor: default;
 `;
 
-const SachaLink = styled.a`
+const Button = styled.a`
   background-color: ${(props) => (props.isDetail ? "#11428c" : "#18ADB1")};
   color: white;
   font-size: 1rem;
@@ -158,66 +154,70 @@ export default function Home() {
       </HeaderWarningMessage>
       <CardContainer>
         <GridTitle>단기 핵심과정</GridTitle>
-        <DangiContainer>
+        <SmallCardContainer>
           <Card
-            background="dangi_c.jpg"
+            src="dangi_c.jpg"
             alt="dangi_c"
             onClick={() => togglePopup(Course_C_gen, null)}
           />
           <Card
-            background="dangi_java.jpg"
+            src="dangi_java.jpg"
             alt="dangi_java"
             onClick={() => togglePopup(Course_Java_gen, null)}
           />
           <Card
-            background="dangi_python.jpg"
+            src="dangi_python.jpg"
             alt="dangi_data"
             onClick={() => togglePopup(Course_Python_gen, null)}
           />
           <Card
-            background="dangi_jdbc.jpg"
+            src="dangi_jdbc.jpg"
             alt="dangi_jdbc"
             onClick={() => togglePopup(Course_Jdbc_gen, null)}
           />
-        </DangiContainer>
+        </SmallCardContainer>
         <GridTitle>4차산업 선도인력 양성</GridTitle>
-        <SachaContainer>
-          <SachaCard className="sacha" background="cloud_bigdata_sacha.jpg">
-            <SachaLink
-              isDetail
-              onClick={() => togglePopup(Cloud_Bigdata_gen, null)}
-            >
-              상세보기
-            </SachaLink>
-            <SachaLink href="https://forms.gle/yDqrCBKKnnAnGE8r8">
-              지원하기
-            </SachaLink>
-          </SachaCard>
-          <SachaCard
-            className="sacha"
-            background="aws_sacha.jpg"
-            alt="sacha_cloud"
-          >
-            <SachaLink
-              isDetail
-              href="https://www.hrd.go.kr/hrdp/co/pcobo/PCOBO0100P.do?tracseId=AIG20200000268656&tracseTme=1&crseTracseSe=C0061&trainstCstmrId=500020028183#undefined"
-            >
-              상세보기
-            </SachaLink>
-            <SachaLink href="https://forms.gle/6uJbhDGPU7gi2Y386">
-              지원하기
-            </SachaLink>
-          </SachaCard>
-        </SachaContainer>
-        <SachaContainer>
-          <div>
+        <BigCardContainer>
+          <BigCardWrapper>
+            <BigCard className="sacha" src="cloud_bigdata_sacha.jpg" />
+            <div className="button__wrapper">
+              <Button
+                isDetail
+                onClick={() => togglePopup(Cloud_Bigdata_gen, null)}
+              >
+                상세보기
+              </Button>
+              <Button href="https://forms.gle/yDqrCBKKnnAnGE8r8">
+                지원하기
+              </Button>
+            </div>
+          </BigCardWrapper>
+          <BigCardWrapper>
+            <BigCard className="sacha" src="aws_sacha.jpg" alt="sacha_cloud" />
+            <div className="button__wrapper">
+              <Button
+                isDetail
+                href="https://www.hrd.go.kr/hrdp/co/pcobo/PCOBO0100P.do?tracseId=AIG20200000268656&tracseTme=1&crseTracseSe=C0061&trainstCstmrId=500020028183#undefined"
+              >
+                상세보기
+              </Button>
+              <Button href="https://forms.gle/6uJbhDGPU7gi2Y386">
+                지원하기
+              </Button>
+            </div>
+          </BigCardWrapper>
+        </BigCardContainer>
+
+        <BigCardContainer>
+          <BigCardWrapper>
             <GridTitle>청년취업아카데미</GridTitle>
-            <SachaCard
+            <BigCard
               className="sacha"
-              background="chung_nyun_main.jpg"
+              src="chung_nyun_main.jpg"
               alt="sacha_cloud"
-            >
-              <SachaLink
+            />
+            <div className="button__wrapper">
+              <Button
                 isDetail
                 onClick={() =>
                   togglePopup(null, {
@@ -229,20 +229,17 @@ export default function Home() {
                 }
               >
                 상세보기
-              </SachaLink>
-              <SachaLink href="https://docs.google.com/forms/d/e/1FAIpQLSd_50XGeRBdsoEqzL63YcK63RQVVcxNpryiGRcXJ5gE0OC2jA/viewform">
+              </Button>
+              <Button href="https://docs.google.com/forms/d/e/1FAIpQLSd_50XGeRBdsoEqzL63YcK63RQVVcxNpryiGRcXJ5gE0OC2jA/viewform">
                 지원하기
-              </SachaLink>
-            </SachaCard>
-          </div>
-          <div>
+              </Button>
+            </div>
+          </BigCardWrapper>
+          <BigCardWrapper>
             <GridTitle>신입사원채용교육</GridTitle>
-            <SachaCard
-              className="sacha"
-              background="sinip_main.jpg"
-              alt="sacha_cloud"
-            >
-              <SachaLink
+            <BigCard className="sacha" src="sinip_main.jpg" alt="sacha_cloud" />
+            <div className="button__wrapper">
+              <Button
                 isDetail
                 onClick={() =>
                   togglePopup(null, {
@@ -254,13 +251,13 @@ export default function Home() {
                 }
               >
                 상세보기
-              </SachaLink>
-              <SachaLink href="https://docs.google.com/forms/d/1KtIGD0qmiFblQszd-U_05D7JMr-TykcADBckP9PCtZs/edit">
+              </Button>
+              <Button href="https://docs.google.com/forms/d/1KtIGD0qmiFblQszd-U_05D7JMr-TykcADBckP9PCtZs/edit">
                 지원하기
-              </SachaLink>
-            </SachaCard>
-          </div>
-        </SachaContainer>
+              </Button>
+            </div>
+          </BigCardWrapper>
+        </BigCardContainer>
       </CardContainer>
     </Container>
   );

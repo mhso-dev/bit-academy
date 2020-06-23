@@ -24,8 +24,8 @@ const PopupInner = styled.div`
   max-width: 40%;
   max-height: 90%;
   overflow-y: scroll;
-  left: 10%;
-  right: 10%;
+  left: 25%;
+  right: 25%;
   top: 5%;
   bottom: 5%;
   margin: auto;
@@ -70,7 +70,6 @@ const DocumentSubTitle = styled.div`
 `;
 
 const DescWrapper = styled.div`
-  display: flex;
   flex-direction: column;
   padding: 1.5rem;
 `;
