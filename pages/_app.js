@@ -1,10 +1,8 @@
 import App from "next/app";
 import React from "react";
 import { createGlobalStyle } from "styled-components";
-import reset from "styled-reset";
 
 const GlobalStyle = createGlobalStyle`
-     ${reset}
      html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,6 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;

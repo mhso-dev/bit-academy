@@ -7,7 +7,10 @@ import Course_Java_gen from "../utils/data-generator/short-term-course/Course_Ja
 import Course_Python_gen from "../utils/data-generator/short-term-course/Course_Python_gen";
 import Course_Jdbc_gen from "../utils/data-generator/short-term-course/Course_Jdbc_gen";
 import Cloud_Bigdata_gen from "../utils/data-generator/short-term-course/Cloud_Bigdata_gen";
-const Container = styled.div``;
+import Header from "../components/Header";
+const Container = styled.div`
+  width: 100%;
+`;
 
 const HeaderWarningMessage = styled.div`
   padding: 1rem;
@@ -47,7 +50,7 @@ const HeaderWarningMessage = styled.div`
 `;
 
 const CardContainer = styled.div`
-  width: 70%;
+  width: 55%;
   margin: auto;
 `;
 
@@ -89,6 +92,7 @@ const BigCard = styled(Card)`
 `;
 
 const Button = styled.a`
+  font-weight: 700;
   background-color: ${(props) => (props.isDetail ? "#11428c" : "#18ADB1")};
   color: white;
   font-size: 1rem;
@@ -135,7 +139,7 @@ export default function Home() {
           content="프로그래밍 교육 비트교육센터 비트캠프 비트캠퍼스 자바 C C++ 국비지원 4차산업 AWS 빅데이터 클라우드 머신러닝 딥러닝"
         />
       </Head>
-      <HeaderWarningMessage>
+      {/* <HeaderWarningMessage>
         <div className="wrapper">
           <div className="textWrapper">
             <h1>[ 비트교육센터 임시 페이지 운영중 ]</h1>
@@ -151,7 +155,11 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </HeaderWarningMessage>
+      </HeaderWarningMessage> */}
+      {/* <div style={{ width: "55%" }}>
+        <img src="./logo_cut.png" style={{ height: "50px" }} />
+      </div> */}
+      <Header />
       <CardContainer>
         <GridTitle>단기 핵심과정</GridTitle>
         <SmallCardContainer>
