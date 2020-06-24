@@ -50,7 +50,7 @@ const HeaderWarningMessage = styled.div`
 `;
 
 const CardContainer = styled.div`
-  width: 55%;
+  width: 55vw;
   margin: auto;
 `;
 
@@ -123,13 +123,6 @@ export default function Home() {
   );
   return (
     <Container>
-      {popupOpen && (
-        <Popup2
-          togglePopup={togglePopup}
-          popupContents={popupContents}
-          imagePopup={imagePopup}
-        />
-      )}
       <Head>
         <title>비트교육센터에 오신 것을 환영합니다.</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -160,6 +153,13 @@ export default function Home() {
         <img src="./logo_cut.png" style={{ height: "50px" }} />
       </div> */}
       <Header />
+      {popupOpen && (
+        <Popup2
+          togglePopup={togglePopup}
+          popupContents={popupContents}
+          imagePopup={imagePopup}
+        />
+      )}
       <CardContainer>
         <GridTitle>단기 핵심과정</GridTitle>
         <SmallCardContainer>
