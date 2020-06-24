@@ -19,7 +19,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -31,6 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Noto Sans KR', sans-serif;
+
 }
 ol, ul {
 	list-style: none;

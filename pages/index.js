@@ -94,7 +94,7 @@ const BigCard = styled(Card)`
 `;
 
 const Button = styled.a`
-  font-weight: 700;
+  font-weight: 400;
   background-color: ${(props) => (props.isDetail ? "#11428c" : "#18ADB1")};
   color: white;
   font-size: 1rem;
