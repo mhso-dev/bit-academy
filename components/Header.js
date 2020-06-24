@@ -22,7 +22,7 @@ const LogoHeader = styled.div`
 
 const Slogan = styled.div`
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-left: 0.7rem;
 `;
 
