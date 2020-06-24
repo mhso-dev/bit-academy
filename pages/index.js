@@ -8,8 +8,10 @@ import Course_Python_gen from "../utils/data-generator/short-term-course/Course_
 import Course_Jdbc_gen from "../utils/data-generator/short-term-course/Course_Jdbc_gen";
 import Cloud_Bigdata_gen from "../utils/data-generator/short-term-course/Cloud_Bigdata_gen";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 const Container = styled.div`
   width: 100%;
+  background-color: #dadee3;
 `;
 
 const HeaderWarningMessage = styled.div`
@@ -149,9 +151,7 @@ export default function Home() {
           </div>
         </div>
       </HeaderWarningMessage> */}
-      {/* <div style={{ width: "55%" }}>
-        <img src="./logo_cut.png" style={{ height: "50px" }} />
-      </div> */}
+
       <Header />
       {popupOpen && (
         <Popup2
@@ -267,6 +267,7 @@ export default function Home() {
           </BigCardWrapper>
         </BigCardContainer>
       </CardContainer>
+      <Footer />
     </Container>
   );
 }

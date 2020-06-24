@@ -2,13 +2,32 @@ import ImageSlider from "./ImageSlider";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
 
-const HeaderWraper = styled.div`
+const HeaderContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const BackgroundWrapper = styled.div`
   display: flex;
   width: 100%;
 `;
 
 const LogoHeader = styled.div`
-  width: 100%;
+  padding: 1rem;
+  display: flex;
+  width: 55%;
+  align-items: center;
+  margin: auto;
+`;
+
+const Slogan = styled.div`
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 0.7rem;
+`;
+
+const LogoImage = styled.img`
+  max-height: 3vh;
 `;
 
 export default () => {
@@ -44,12 +63,25 @@ export default () => {
   }, [currentImageIndex]);
 
   return (
-    <HeaderWraper bgColor={currentImage.bgColor}>
-      <ImageSlider
-        currentImage={currentImage.bgImage}
-        BannerImageList={BannerImageList}
-        currentImageIndex={currentImageIndex}
-      />
-    </HeaderWraper>
+    <HeaderContainer>
+      <LogoHeader>
+        <LogoImage src="./logo.png" />
+        <Slogan>
+          <span>
+            입학이 긍지가 되고 수료가 날개가 되는{" "}
+            <span style={{ color: "#1498be" }}>
+              상위1%전문가 양성을 위한 교육
+            </span>
+          </span>
+        </Slogan>
+      </LogoHeader>
+      <BackgroundWrapper bgColor={currentImage.bgColor}>
+        <ImageSlider
+          currentImage={currentImage.bgImage}
+          BannerImageList={BannerImageList}
+          currentImageIndex={currentImageIndex}
+        />
+      </BackgroundWrapper>
+    </HeaderContainer>
   );
 };
