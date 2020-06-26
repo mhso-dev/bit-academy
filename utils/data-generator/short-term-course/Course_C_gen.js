@@ -41,15 +41,15 @@ export default {
           },
         ],
       },
-      {
-        time: "19:00 ~ 22:00",
-        courseCost: [
-          {
-            cost: "320,000원",
-            educationMethods: "오프라인",
-          },
-        ],
-      },
+      // {
+      //   time: "19:00 ~ 22:00",
+      //   courseCost: [
+      //     {
+      //       cost: "320,000원",
+      //       educationMethods: "오프라인",
+      //     },
+      //   ],
+      // },
     ],
   },
   courseDetailInformation: [

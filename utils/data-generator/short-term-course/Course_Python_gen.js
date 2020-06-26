@@ -33,7 +33,7 @@ TIOBE Index에서 꾸준히 그 순위가 높아지고 있는 추세이며, 구�
     },
   ],
   courseSchedules: {
-    term: "2020.07.06.월 ~ 07.30.목",
+    term: "2020.08.03.월 ~ 08.27.목",
     courseScheduleTime: [
       {
         time: "14:00 ~ 17:00",
@@ -211,5 +211,5 @@ TIOBE Index에서 꾸준히 그 순위가 높아지고 있는 추세이며, 구�
 
   courseGuide: ["문의 : 비트교육센터 Tel. 02-3486-1780"],
   formUrl:
-    "https://docs.google.com/forms/d/1HLO7Z-H5w7AXiTnVS56U-Ffj55XBuo4_v_zWp4eRXzk/edit",
+    "https://docs.google.com/forms/d/e/1FAIpQLSdhZQPb8mT-8J6z8-7A4TkefxUKRRvWBjOdI_hiQXl8rvkeYA/viewform?usp=sf_link",
 };

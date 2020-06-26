@@ -63,15 +63,21 @@ export default ({ descTitle, descList, descWithTitles, table }) => {
           descWithTitles.map((descWithTitle) => (
             <Desc>
               <CourseTitle>{descWithTitle.descriptionTitle}</CourseTitle>
-              <span
-                style={{
-                  color: "#5da9dd",
-                  fontWeight: "600",
-                }}
-              >
-                ·
-              </span>{" "}
-              {descWithTitle.descriptionContents}
+
+              {descWithTitle.descriptionContents.map((content) => (
+                <>
+                  <span
+                    style={{
+                      color: "#5da9dd",
+                      fontWeight: "600",
+                    }}
+                  >
+                    ·
+                  </span>{" "}
+                  {content}
+                  <br />
+                </>
+              ))}
             </Desc>
           ))
         ) : table ? (
