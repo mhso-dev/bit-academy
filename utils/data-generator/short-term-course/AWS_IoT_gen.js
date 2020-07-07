@@ -179,5 +179,5 @@ export default {
   ],
 
   courseGuide: ["문의 : 비트교육센터 Tel. 02-3486-1780"],
-  formUrl: "https://forms.gle/yDqrCBKKnnAnGE8r8",
+  formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdG1IYmR5ocpmdPvS72ha3n6zTkageJejhak9iJswCOFyOW1Q/viewform",
 };
