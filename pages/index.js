@@ -7,6 +7,7 @@ import Course_Java_gen from "../utils/data-generator/short-term-course/Course_Ja
 import Course_Python_gen from "../utils/data-generator/short-term-course/Course_Python_gen";
 import Course_Jdbc_gen from "../utils/data-generator/short-term-course/Course_Jdbc_gen";
 import Cloud_Bigdata_gen from "../utils/data-generator/short-term-course/Cloud_Bigdata_gen";
+import AWS_IoT_gen from "../utils/data-generator/short-term-course/AWS_IoT_gen";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 const Container = styled.div`
@@ -186,6 +187,21 @@ export default function Home() {
         </SmallCardContainer>
         <GridTitle>4차산업 선도인력 양성</GridTitle>
         <BigCardContainer>
+          
+          <BigCardWrapper>
+            <BigCard className="sacha" src="aws_sacha.jpg" alt="sacha_cloud" />
+            <div className="button__wrapper">
+            <Button
+                isDetail
+                onClick={() => togglePopup(AWS_IoT_gen, null)}
+              >
+                상세보기
+              </Button>
+              <Button href="https://forms.gle/6uJbhDGPU7gi2Y386">
+                지원하기
+              </Button>
+            </div>
+          </BigCardWrapper>
           <BigCardWrapper>
             <BigCard className="sacha" src="cloud_bigdata_sacha.jpg" />
             <div className="button__wrapper">
@@ -195,21 +211,7 @@ export default function Home() {
               >
                 상세보기
               </Button>
-              <Button href="https://forms.gle/yDqrCBKKnnAnGE8r8">
-                지원하기
-              </Button>
-            </div>
-          </BigCardWrapper>
-          <BigCardWrapper>
-            <BigCard className="sacha" src="aws_sacha.jpg" alt="sacha_cloud" />
-            <div className="button__wrapper">
-              <Button
-                isDetail
-                href="https://www.hrd.go.kr/hrdp/co/pcobo/PCOBO0100P.do?tracseId=AIG20200000268656&tracseTme=1&crseTracseSe=C0061&trainstCstmrId=500020028183#undefined"
-              >
-                상세보기
-              </Button>
-              <Button href="https://forms.gle/6uJbhDGPU7gi2Y386">
+              <Button href="https://forms.gle/dhdfVy1NrdXHGf8f8">
                 지원하기
               </Button>
             </div>

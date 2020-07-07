@@ -33,7 +33,8 @@ const LogoImage = styled.img`
 export default () => {
   const BannerImageList = [
     { imageName: "./MainPage_AWSIoT.jpg", bgColor: "#004986" },
-    { imageName: "./MainPage_CloudBigdata.jpg", bgColor: "#2C2D2C" },
+    { imageName: "./MainPage_CloudBigdata.jpg", bgColor: "#87b7ff" },
+    { imageName: "./MainPage_CNN.jpg", bgColor: "#2C2D2C" },
   ];
 
   const [currentImage, setCurrentImage] = useState({
