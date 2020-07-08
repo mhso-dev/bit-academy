@@ -23,7 +23,7 @@ export default {
     },
   ],
   courseSchedules: {
-    term: "2020년 7월 13일 ~ 2021년 1월 7일",
+    term: "2020년 7월 20일 ~ 2021년 1월 14일",
     courseScheduleTime: [
       {
         time: "09:00 ~ 18:00",
