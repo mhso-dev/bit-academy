@@ -59,11 +59,10 @@ export default {
       day: "3일",
       title: "[영상 응용 CNN 워크플로우]",
       contents: [
-        "Connection/Session, Optimizer의 이해, Connection/Session",
-        "옵티마이저의 개념 및 종류, 1규칙 기반 옵티마이저, 비용기반 옵티마이저",
-        "옵티마이저의 최적화를 위한 고려사항, CBO Statistics/Execution/Histogram",
-        "인덱스의 이해, 인덱스의 개념 및 작동원리, 인덱스 설계, 인덱스를 활용한 SQL 튜닝 사례",
-        "INNER JOIN, OUTER JOIN, CARTESIAN JOIN, SELF JOIN",
+        "lassification, TF Slim 기초",
+        "TF Slim Workflow 기초 , Down load 및 데이터 변환",
+        "학습/평가/메트릭, 학습된 모델 Fine-Tuning",
+      
       ],
     },
     {
