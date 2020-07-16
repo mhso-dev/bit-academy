@@ -38,17 +38,18 @@ export default {
   courseContents: [
     {
       day: "1일",
-      title: "[영상 응용 CNN 워크플로우]",
+      title: "[파이썬 리뷰/Numpi 및 matplotlib 활용 / 딥러닝 라이브러리]",
       contents: [
         "파이썬의 개요, 자료형/제어 명령",
         "함수(Function) / 클래스(Class), 모듈(Module) / 예외 처리(Exception)",
         "내장함수 / 외장함수, Numpi 및 matplotlib를 사용한 그래픽 처리",
-        
+        "텐서 플로우, 케라스, 파이토치 개요",
+        "예제 실행 및 라이브러리 별 특징 비교",
       ],
     },
     {
       day: "2일",
-      title: "[영상 응용 CNN 워크플로우]",
+      title: "[딥러닝 기초 실습]",
       contents: [
         "텐서 플로우 개요, 양적,질적 자료의 해석",
         "Softmax, 딥레이어, Vanishing gradient, Overfitting",
@@ -57,18 +58,21 @@ export default {
     },
     {
       day: "3일",
-      title: "[영상 응용 CNN 워크플로우]",
+      title: "[딥러닝 classfication 실습]",
       contents: [
-        "lassification, TF Slim 기초",
-        "TF Slim Workflow 기초 , Down load 및 데이터 변환",
+        "alexnet / ZFnet / VGG / Inception / Resnet 실습",
+        "classification workflow",
         "학습/평가/메트릭, 학습된 모델 Fine-Tuning",
       
       ],
     },
     {
       day: "4일",
-      title: "[영상 응용 CNN 워크플로우]",
+      title: "[딥러닝 object detection 실습]",
       contents: [
+        "Object detection 개요",
+        "RCNN, Fast RCNN, Faster RCNN 비교",
+        "Faster RCNN 실습",
         "YOLO의 개요, YOLO 실습, YOLO work flow 실습",
         
       ],
