@@ -255,14 +255,14 @@ export default function Home() {
                   togglePopup(null, {
                     imageUrl: "/sinip_detail.jpg",
                     imageFormUrl:
-                      "https://docs.google.com/forms/d/1KtIGD0qmiFblQszd-U_05D7JMr-TykcADBckP9PCtZs/edit",
-                    doc_download: "/신입사원채용교육 지원서(양식).xls",
+                      "http://www.jobkorea.co.kr/Search/?stext=%ec%95%84%ec%9d%b4%eb%b9%84%ec%8a%a4",
+                    
                   })
                 }
               >
                 상세보기
               </Button>
-              <Button href="https://docs.google.com/forms/d/1KtIGD0qmiFblQszd-U_05D7JMr-TykcADBckP9PCtZs/edit">
+              <Button href="http://www.jobkorea.co.kr/Search/?stext=%ec%95%84%ec%9d%b4%eb%b9%84%ec%8a%a4">
                 지원하기
               </Button>
             </div>
