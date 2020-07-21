@@ -189,7 +189,7 @@ export default function Home() {
         <BigCardContainer>
           
           <BigCardWrapper>
-            <BigCard className="sacha" src="aws_sacha.jpg" alt="sacha_cloud" />
+            <BigCard className="sacha" src="AWSIoT_gif.gif" alt="sacha_cloud" />
             <div className="button__wrapper">
             <Button
                 isDetail
