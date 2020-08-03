@@ -23,7 +23,7 @@ export default {
     },
   ],
   courseSchedules: {
-    term: "2020년 7월 20일 ~ 2021년 1월 20일",
+    term: "2020년 8월 31일 ~ 2021년 2월 28일",
     courseScheduleTime: [
       {
         time: "09:00 ~ 18:00",
@@ -179,5 +179,5 @@ export default {
   ],
 
   courseGuide: ["문의 : 비트교육센터 Tel. 02-3486-1780"],
-  formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdG1IYmR5ocpmdPvS72ha3n6zTkageJejhak9iJswCOFyOW1Q/viewform",
+  formUrl: "https://forms.gle/p9aryS47epdwzaH1A",
 };

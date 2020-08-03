@@ -165,17 +165,17 @@ export default function Home() {
         <GridTitle>단기 핵심과정</GridTitle>
         <SmallCardContainer>
           <Card
-            src="dangi_c.jpg"
+            src="dangi_c.png"
             alt="dangi_c"
             onClick={() => togglePopup(Course_C_gen, null)}
           />
           <Card
-            src="dangi_java.jpg"
+            src="dangi_java.png"
             alt="dangi_java"
             onClick={() => togglePopup(Course_Java_gen, null)}
           />
           <Card
-            src="dangi_python.jpg"
+            src="dangi_python.png"
             alt="dangi_data"
             onClick={() => togglePopup(Course_Python_gen, null)}
           />
@@ -189,7 +189,7 @@ export default function Home() {
         <BigCardContainer>
           
           <BigCardWrapper>
-            <BigCard className="sacha" src="AWSIoT_gif.gif" alt="sacha_cloud" />
+            <BigCard className="sacha" src="AWSIoT.jpg" alt="sacha_cloud" />
             <div className="button__wrapper">
             <Button
                 isDetail
@@ -197,7 +197,7 @@ export default function Home() {
               >
                 상세보기
               </Button>
-              <Button href="https://forms.gle/6uJbhDGPU7gi2Y386">
+              <Button href="https://forms.gle/p9aryS47epdwzaH1A">
                 지원하기
               </Button>
             </div>
@@ -211,7 +211,7 @@ export default function Home() {
               >
                 상세보기
               </Button>
-              <Button href="https://forms.gle/dhdfVy1NrdXHGf8f8">
+              <Button href="https://forms.gle/FjQsR6KVr9e455WG9">
                 지원하기
               </Button>
             </div>
