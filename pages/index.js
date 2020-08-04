@@ -187,7 +187,20 @@ export default function Home() {
         </SmallCardContainer>
         <GridTitle>4차산업 선도인력 양성</GridTitle>
         <BigCardContainer>
-          
+        <BigCardWrapper>
+            <BigCard className="sacha" src="cloud_bigdata_sacha.jpg" />
+            <div className="button__wrapper">
+              <Button
+                isDetail
+                onClick={() => togglePopup(Cloud_Bigdata_gen, null)}
+              >
+                상세보기
+              </Button>
+              <Button href="https://forms.gle/dhdfVy1NrdXHGf8f8">
+                지원하기
+              </Button>
+            </div>
+          </BigCardWrapper>
           <BigCardWrapper>
             <BigCard className="sacha" src="AWSIoT.jpg" alt="sacha_cloud" />
             <div className="button__wrapper">
@@ -202,20 +215,7 @@ export default function Home() {
               </Button>
             </div>
           </BigCardWrapper>
-          <BigCardWrapper>
-            <BigCard className="sacha" src="cloud_bigdata_sacha.jpg" />
-            <div className="button__wrapper">
-              <Button
-                isDetail
-                onClick={() => togglePopup(Cloud_Bigdata_gen, null)}
-              >
-                상세보기
-              </Button>
-              <Button href="https://forms.gle/FjQsR6KVr9e455WG9">
-                지원하기
-              </Button>
-            </div>
-          </BigCardWrapper>
+          
         </BigCardContainer>
 
         <BigCardContainer>
