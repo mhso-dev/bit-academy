@@ -188,7 +188,7 @@ export default function Home() {
         <GridTitle>4차산업 선도인력 양성</GridTitle>
         <BigCardContainer>
         <BigCardWrapper>
-            <BigCard className="sacha" src="cloud_bigdata_sacha.jpg" />
+            <BigCard className="sacha" src="AI_gif.gif" />
             <div className="button__wrapper">
               <Button
                 isDetail
