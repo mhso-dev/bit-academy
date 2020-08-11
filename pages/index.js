@@ -218,7 +218,7 @@ export default function Home() {
           
         </BigCardContainer>
 
-        <BigCardContainer>
+        {/* <BigCardContainer>
           <BigCardWrapper>
             <GridTitle>청년취업아카데미</GridTitle>
             <BigCard
@@ -267,7 +267,7 @@ export default function Home() {
               </Button>
             </div>
           </BigCardWrapper>
-        </BigCardContainer>
+        </BigCardContainer> */}
       </CardContainer>
       <Footer />
     </Container>
