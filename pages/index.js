@@ -8,6 +8,8 @@ import Course_Python_gen from "../utils/data-generator/short-term-course/Course_
 import Course_Jdbc_gen from "../utils/data-generator/short-term-course/Course_Jdbc_gen";
 import Cloud_Bigdata_gen from "../utils/data-generator/short-term-course/Cloud_Bigdata_gen";
 import AWS_IoT_gen from "../utils/data-generator/short-term-course/AWS_IoT_gen";
+import Course_high_Window_gen from "../utils/data-generator/short-term-course/Course_high_Window_gen";
+import Course_Tensorflow_gen from "../utils/data-generator/short-term-course/Course_Tensorflow_gen";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 const Container = styled.div`
@@ -187,20 +189,8 @@ export default function Home() {
         </SmallCardContainer>
         <GridTitle>4차산업 선도인력 양성</GridTitle>
         <BigCardContainer>
-        <BigCardWrapper>
-            <BigCard className="sacha" src="AI_gif.gif" />
-            <div className="button__wrapper">
-              <Button
-                isDetail
-                onClick={() => togglePopup(Cloud_Bigdata_gen, null)}
-              >
-                상세보기
-              </Button>
-              <Button href="https://forms.gle/dhdfVy1NrdXHGf8f8">
-                지원하기
-              </Button>
-            </div>
-          </BigCardWrapper>
+        
+           
           <BigCardWrapper>
             <BigCard className="sacha" src="AWSIoT.jpg" alt="sacha_cloud" />
             <div className="button__wrapper">
@@ -215,12 +205,25 @@ export default function Home() {
               </Button>
             </div>
           </BigCardWrapper>
-          
+          <BigCardWrapper>
+          <BigCard className="sacha" src="cloud_bigdata_sacha 0831.jpg" />
+            <div className="button__wrapper">
+              <Button
+                isDetail
+                onClick={() => togglePopup(Cloud_Bigdata_gen, null)}
+              >
+                상세보기
+              </Button>
+              <Button href="https://forms.gle/wTenB2Bets6Uuktq6">
+                지원하기
+              </Button>
+            </div>
+          </BigCardWrapper>
         </BigCardContainer>
 
-        {/* <BigCardContainer>
-          <BigCardWrapper>
-            <GridTitle>청년취업아카데미</GridTitle>
+        { <BigCardContainer>
+          {/* <BigCardWrapper>
+            <GridTitle>고급과정</GridTitle>
             <BigCard
               className="sacha"
               src="chung_nyun_main.jpg"
@@ -244,30 +247,24 @@ export default function Home() {
                 지원하기
               </Button>
             </div>
+          </BigCardWrapper> */}
+          <BigCardWrapper>
+            <GridTitle>고급과정</GridTitle>
+            <Card
+            src="Window.Net.jpg"
+            alt="Window.Net"
+            onClick={() => togglePopup(Course_high_Window_gen, null)}
+          />
           </BigCardWrapper>
           <BigCardWrapper>
-            <GridTitle>신입사원채용교육</GridTitle>
-            <BigCard className="sacha" src="sinip_main.jpg" alt="sacha_cloud" />
-            <div className="button__wrapper">
-              <Button
-                isDetail
-                onClick={() =>
-                  togglePopup(null, {
-                    imageUrl: "/sinip_detail.jpg",
-                    imageFormUrl:
-                      "http://www.jobkorea.co.kr/Search/?stext=%ec%95%84%ec%9d%b4%eb%b9%84%ec%8a%a4",
-                    
-                  })
-                }
-              >
-                상세보기
-              </Button>
-              <Button href="http://www.jobkorea.co.kr/Search/?stext=%ec%95%84%ec%9d%b4%eb%b9%84%ec%8a%a4">
-                지원하기
-              </Button>
-            </div>
+            <GridTitle>재직자과정</GridTitle>
+            <Card
+            src="Tesorflow.jpg"
+            alt="Tesorflow"
+            onClick={() => togglePopup(Course_Tensorflow_gen, null)}
+          />
           </BigCardWrapper>
-        </BigCardContainer> */}
+        </BigCardContainer> }
       </CardContainer>
       <Footer />
     </Container>

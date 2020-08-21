@@ -42,6 +42,7 @@ const CourseScheduleTable = styled.table`
 `;
 
 export default ({ term, courseScheduleTime }) => {
+
   return (
     <TableWrapper>
       <CourseScheduleTable>
@@ -62,7 +63,20 @@ export default ({ term, courseScheduleTime }) => {
                     {term}
                   </td>
                 )}
+{/*                 
+                {index2 === 0 && <td rowSpan={2}>{data.time.split("\n").map((timeText, index3) => 
+                  index3 === data.time.split("\n").length - 1 ?
+                  (
+                    <>{timeText}</>
+                  ) : (
+                    <>
+                      {timeText}<br/>
+                    </>
+                  )
+                ) }</td>} */}
+
                 {index2 === 0 && <td rowSpan={2}>{data.time}</td>}
+
                 <td>{data2.cost}</td>
                 <td>{data2.educationMethods}</td>
               </tr>
