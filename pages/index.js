@@ -265,6 +265,33 @@ export default function Home() {
           />
           </BigCardWrapper>
         </BigCardContainer> }
+
+        <GridTitle>신입사원 채용교육</GridTitle>
+        <SmallCardContainer>
+          <Card
+            src="Bitcomputer.jpg"
+            alt="Bitcomputer"
+            // onClick={() =>
+            //   togglePopup(null, {
+            //     imageUrl: "/chungnyun_detail.jpg",
+            //     imageFormUrl:
+            //       "https://docs.google.com/forms/d/e/1FAIpQLSd_50XGeRBdsoEqzL63YcK63RQVVcxNpryiGRcXJ5gE0OC2jA/viewform",
+            //     doc_download: "/청년취업아카데미 지원서 양식.doc",
+            //   })
+            // }
+          />
+          <Card
+            src="Naviworks.jpg"
+            alt="Naviworks"
+           
+          />
+          <Card
+            src="Logos.jpg"
+            alt="Logos"
+         
+          />
+          
+        </SmallCardContainer>
       </CardContainer>
       <Footer />
     </Container>
