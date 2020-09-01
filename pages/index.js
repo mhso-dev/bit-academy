@@ -273,7 +273,7 @@ export default function Home() {
             alt="Bitcomputer"
             onClick={() =>
               togglePopup(null, {
-                imageUrl: "/Bitcomputer_Detail.png",
+                imageUrl: "/Bitcomputer_Detail_1.jpg",
                 imageFormUrl:
                   "mailto:job@bit.kr?subject=[신입사원채용교육/비트컴퓨터] 지원서",
                 doc_download: "/전문가 지원서.doc",
@@ -285,7 +285,7 @@ export default function Home() {
             alt="Naviworks"
             onClick={() =>
               togglePopup(null, {
-                imageUrl: "/Naviworks_Detail.jpg",
+                imageUrl: "/Naviworks_Detail_3.jpg",
                 imageFormUrl:
                 "mailto:job@bit.kr?subject=[신입사원채용교육/네비웍스] 지원서",
                 doc_download: "/전문가 지원서.doc",
