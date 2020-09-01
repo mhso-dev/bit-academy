@@ -1,13 +1,14 @@
 export default {
-  courseTitle: { mainTitle: "4차산업분야 과정", subTitle: "AI 과정" },
-  courseSubTitle: "영상 응용 CNN기반 딥러닝 워크플로우 과정",
+  courseTitle: { mainTitle: "4차산업분야 과정", subTitle: "빅데이터 과정" },
+  courseSubTitle: "Java JDBC기반의 SQL 성능튜닝",
   courseGoal: [
-    "기초 부터 GPU 기반 딥러닝 활용하는 과정으로 파이썬 문법 및 실습 진행, 텐서플로우 기반의 AI 학습에 기본 개념인 Deep Learning을 배우고 실습한 후에 CNN 기반의 다양한 이미지 네트워크를 학습을 통하여 사물인식 및 사물 검출 활용",
+    "JDBC기반 데이터베이스 애플리케이션 개발시 대용량 데이터 처리 시 발생하는 속도저하 개선 및 성능을 고려한 코딩 방법과 사항을 이론과 실습을 통해 학습 하며, DBMS 아키텍처 이해를 기반으로 SQL 실행 원리와 성능 튜닝 원리 학습",
   ],
   courseTarget: [
     {
       descriptionContents: [
         "데이터베이스 관련 직무 재직자, SQL 학습이 필요한 재직자",
+        "튜닝에 필수인 인덱스와 조인을 심도 있게 학습을 하려는 재직자",
         
       ],
     },
@@ -38,43 +39,40 @@ export default {
   courseContents: [
     {
       day: "1일",
-      title: "[파이썬 리뷰/Numpi 및 matplotlib 활용 / 딥러닝 라이브러리]",
+      title: "[SQL 성능튜닝]",
       contents: [
-        "파이썬의 개요, 자료형/제어 명령",
-        "함수(Function) / 클래스(Class), 모듈(Module) / 예외 처리(Exception)",
-        "내장함수 / 외장함수, Numpi 및 matplotlib를 사용한 그래픽 처리",
-        "텐서 플로우, 케라스, 파이토치 개요",
-        "예제 실행 및 라이브러리 별 특징 비교",
+        "대용량 데이터 생성, 프로그램 방식 성능 비교/분석",
+        "자바 기반 배치 프로그램 방식 성능 비교/분석",
+        "절차적/비절차적 프로그래밍, Array Processing",
       ],
     },
     {
       day: "2일",
-      title: "[딥러닝 기초 실습]",
+      title: "[SQL 성능튜닝]",
       contents: [
-        "텐서 플로우 개요, 양적,질적 자료의 해석",
-        "Softmax, 딥레이어, Vanishing gradient, Overfitting",
-        "Back propagation, Tensor Board, CNN 개요",
+        "Oracle DBMS 아키텍쳐(튜닝관점), Instance, Database, 논리적/물리적 저장구조",
+        "Parsing, Execute, Fetch, Physical, Logical read, Cache Hit, DML, SELECT",
       ],
     },
     {
       day: "3일",
-      title: "[딥러닝 classfication 실습]",
+      title: "[SQL 성능튜닝]",
       contents: [
-        "alexnet / ZFnet / VGG / Inception / Resnet 실습",
-        "classification workflow",
-        "학습/평가/메트릭, 학습된 모델 Fine-Tuning",
+        "Connection/Session, Optimizer의 이해, Connection/Session",
+        "옵티마이저의 개념 및 종류, 1규칙 기반 옵티마이저, 비용기반 옵티마이저",
+        "옵티마이저 최적화를 위한 고려사항, CBOStatistics/Execution/Histogram",
+        "인덱스의 이해, 인덱스의 개념 및 작동원리, 인덱스 설계, 인덱스를 활용한 SQL튜닝 사례",
+        "INNER JOIN, OUTER JOIN, CARTESIAN JOIN, SELF JOIN",
       
       ],
     },
     {
       day: "4일",
-      title: "[딥러닝 object detection 실습]",
+      title: "[SQL 성능튜닝]",
       contents: [
-        "Object detection 개요",
-        "RCNN, Fast RCNN, Faster RCNN 비교",
-        "Faster RCNN 실습",
-        "YOLO의 개요, YOLO 실습, YOLO work flow 실습",
-        
+        "SQL의 튜닝 및 튜닝 실습 SQL 튜닝 원리, SQL 성능 비교 / 분석",
+        "사례별 튜닝기법 분석, 모니터링 및 분석, GC / Heavy SQL / DBMS Instance",
+
       ],
     },
   ],
@@ -83,6 +81,6 @@ export default {
     "문의 : 비트교육센터 Tel. 02-3486-1780",
     "서류는 hhji@bit.kr 로 제출 바랍니다. ",
   ],
-  formUrl: "https://forms.gle/oUowUvEv7uco5c8R6",
+  formUrl: "",
   doc_download: "/doc_CNN.zip",
 };

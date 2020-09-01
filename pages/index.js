@@ -5,11 +5,15 @@ import { useState, useCallback } from "react";
 import Course_C_gen from "../utils/data-generator/short-term-course/Course_C_gen";
 import Course_Java_gen from "../utils/data-generator/short-term-course/Course_Java_gen";
 import Course_Python_gen from "../utils/data-generator/short-term-course/Course_Python_gen";
-import Course_Jdbc_gen from "../utils/data-generator/short-term-course/Course_Jdbc_gen";
-import Cloud_Bigdata_gen from "../utils/data-generator/short-term-course/Cloud_Bigdata_gen";
-import AWS_IoT_gen from "../utils/data-generator/short-term-course/AWS_IoT_gen";
 import Course_high_Window_gen from "../utils/data-generator/short-term-course/Course_high_Window_gen";
 import Course_Tensorflow_gen from "../utils/data-generator/short-term-course/Course_Tensorflow_gen";
+
+import Cloud_Bigdata_gen from "../utils/data-generator/short-term-course/Cloud_Bigdata_gen";
+import AWS_IoT_gen from "../utils/data-generator/short-term-course/AWS_IoT_gen";
+import Course_Tensor_gen from "../utils/data-generator/short-term-course/Course_Tensor_gen";
+import Course_CNN_gen from "../utils/data-generator/short-term-course/Course_CNN_gen";
+import Course_AWS_gen from "../utils/data-generator/short-term-course/Course_AWS_gen";
+import Course_Jdbc_gen from "../utils/data-generator/short-term-course/Course_Jdbc_gen";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 const Container = styled.div`
@@ -184,7 +188,7 @@ export default function Home() {
           {/* <Card
             src="dangi_jdbc.jpg"
             alt="dangi_jdbc"
-            onClick={() => togglePopup(Course_Jdbc_gen, null)}
+            onClick={() => togglePopup(Course_AWS_gen, null)}
           /> */}
         </SmallCardContainer>
         <GridTitle>4차산업 선도인력 양성</GridTitle>
