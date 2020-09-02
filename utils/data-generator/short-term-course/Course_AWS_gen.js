@@ -84,6 +84,6 @@ export default {
     "문의 : 비트교육센터 Tel. 02-3486-1780",
     "서류는 hhji@bit.kr 로 제출 바랍니다. ",
   ],
-  formUrl: "",
-  doc_download: "/doc_CNN.zip",
+  formUrl: "https://forms.gle/oRXo6VXoV6mXbWGn9",
+  doc_download: "/AWSWeb_Register.zip",
 };

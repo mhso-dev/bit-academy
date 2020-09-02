@@ -185,11 +185,11 @@ export default function Home() {
             alt="dangi_data"
             onClick={() => togglePopup(Course_Python_gen, null)}
           />
-          {/* <Card
-            src="dangi_jdbc.jpg"
-            alt="dangi_jdbc"
+          <Card
+            src="AWS_Web.jpg"
+            alt="AWS_Web"
             onClick={() => togglePopup(Course_AWS_gen, null)}
-          /> */}
+          />
         </SmallCardContainer>
         <GridTitle>4차산업 선도인력 양성</GridTitle>
         <BigCardContainer>
