@@ -81,7 +81,7 @@ export default {
   ],
 
   courseGuide: [
-    "문의 : 비트교육센터 Tel. 02-3486-1780",
+    "문의 : 비트교육센터 Tel. 070-4166-2491",
     "서류는 hhji@bit.kr 로 제출 바랍니다. ",
   ],
   formUrl: "https://forms.gle/oRXo6VXoV6mXbWGn9",
