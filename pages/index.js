@@ -270,7 +270,7 @@ export default function Home() {
           </BigCardWrapper>
         </BigCardContainer> }
 
-        <GridTitle>신입사원 채용교육</GridTitle>
+        {/* <GridTitle>신입사원 채용교육</GridTitle>
         <SmallCardContainer>
           <Card
             src="Bitcomputer.jpg"
@@ -297,13 +297,8 @@ export default function Home() {
             }
            
           />
-          {/* <Card
-            src="Logos.jpg"
-            alt="Logos"
-         
-          /> */}
-          
-        </SmallCardContainer>
+
+        </SmallCardContainer> */}
       </CardContainer>
       <Footer />
     </Container>
