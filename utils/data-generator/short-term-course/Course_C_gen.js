@@ -26,7 +26,7 @@ export default {
     },
   ],
   courseSchedules: {
-    term: "2020.09.07.월 ~ 09.28.월",
+    term: "2020.10.07.수 ~ 10.29.목",
     courseScheduleTime: [
       {
         time: "19:00 ~ 22:00",
@@ -34,6 +34,10 @@ export default {
           {
             cost: "320,000원",
             educationMethods: "오프라인",
+          },
+          {
+            cost: "300,000원",
+            educationMethods: "온라인",
           },
         ],
       },
@@ -48,7 +52,15 @@ export default {
         "서울시 서초구 서초대로 74길 33, 비트빌딩 3층",
       ],
     },
-  
+    {
+      educationMethod: "온라인\n(비대면강의)",
+      educationMethodDetail: [
+        "수업운영 플랫폼(Zoom)을 활용한 온라인 강의",
+        "수업교재 제공",
+        "강의 참여방법 : 단톡방을 개설 후 수업진행 코드를 링크(공유)",
+        "개인 노트북/PC 필수",
+      ],
+    },
   ],
   courseContents: [
     {
@@ -182,5 +194,5 @@ export default {
   ],
   courseGuide: ["문의 : 비트교육센터 Tel. 02-3486-1780"],
   formUrl:
-    "https://docs.google.com/forms/d/e/1FAIpQLSclLZeLng8imL8AL8v7wtQ0BqnpnD1R6CoVpeYfQUphkHVWAA/viewform?usp=sf_link",
+    "https://docs.google.com/forms/d/e/1FAIpQLSf8qjTqxk0WGkp6eHRBIumJFhbTjROs89tFBVvMKcxB0-y5cA/viewform?usp=sf_link",
 };

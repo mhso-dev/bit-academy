@@ -33,7 +33,7 @@ TIOBE Index에서 꾸준히 그 순위가 높아지고 있는 추세이며, 구�
     },
   ],
   courseSchedules: {
-    term: "2020.09.07.월 ~ 09.28.월",
+    term: "2020.10.07.수 ~ 10.29.월",
     courseScheduleTime: [
       {
         time: "19:00 ~ 22:00",
@@ -42,6 +42,10 @@ TIOBE Index에서 꾸준히 그 순위가 높아지고 있는 추세이며, 구�
             cost: "320,000원",
             educationMethods: "오프라인",
           },
+          {
+            cost: "300,000원",
+            educationMethods: "온라인",
+          }
         ],
       },
     ],
@@ -52,6 +56,16 @@ TIOBE Index에서 꾸준히 그 순위가 높아지고 있는 추세이며, 구�
       educationMethodDetail: [
         "비트교육센터 강의장에서 강의 진행",
         "서울시 서초구 서초대로 74길 33, 비트빌딩 3층",
+      ],
+      
+    },
+    {
+      educationMethod: "온라인(비대면강의)",
+      educationMethodDetail: [
+        "수업운영 플랫폼(Zoom)을 활용한 온라인 강의",
+        "수업교재 제공",
+        "강의 참여방법 : 단톡방을 개설 후 수업진행 코드를 링크(공유)",
+        "개인 노트북/PC 필수",
       ],
     },
     
@@ -195,7 +209,28 @@ TIOBE Index에서 꾸준히 그 순위가 높아지고 있는 추세이며, 구�
     },
   ],
 
+  // 국민내일 배움카드 안내
+  cardInfomation: [
+    {
+      descriptionContents: [
+        "기존 구직자 또는 재직자로 운영되던 내일배움카드를 국민내일배움카드로 통합 ('20,1,1)",
+        "실업 재직, 자영업자 여부 관계없이 신청 가능",
+      ],
+    },
+    {
+      descriptionTitle: "지원금액",
+      descriptionContents: ["1인당 300~500만원까지 훈련비의 45~85% 지원"],
+    },
+    {
+      descriptionTitle: "문의처",
+      descriptionContents: [
+        "고용노동부 고객상담센터 (Tel. 국번없이 1350)",
+        "HRD-NET 홈페이지 (www.hrd.go.kr)",
+      ],
+    },
+  ],
+
   courseGuide: ["문의 : 비트교육센터 Tel. 02-3486-1780"],
   formUrl:
-    "https://docs.google.com/forms/d/e/1FAIpQLSclLZeLng8imL8AL8v7wtQ0BqnpnD1R6CoVpeYfQUphkHVWAA/viewform?usp=sf_link",
+    "https://docs.google.com/forms/d/e/1FAIpQLSf8qjTqxk0WGkp6eHRBIumJFhbTjROs89tFBVvMKcxB0-y5cA/viewform?usp=sf_link",
 };

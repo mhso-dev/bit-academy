@@ -171,17 +171,17 @@ export default function Home() {
         <GridTitle>단기 핵심과정</GridTitle>
         <SmallCardContainer>
           <Card
-            src="dangi_c.png"
+            src="dangi_c.jpg"
             alt="dangi_c"
             onClick={() => togglePopup(Course_C_gen, null)}
           />
           <Card
-            src="dangi_java.png"
+            src="dangi_java.jpg"
             alt="dangi_java"
             onClick={() => togglePopup(Course_Java_gen, null)}
           />
           <Card
-            src="dangi_python.png"
+            src="dangi_python.jpg"
             alt="dangi_data"
             onClick={() => togglePopup(Course_Python_gen, null)}
           />
